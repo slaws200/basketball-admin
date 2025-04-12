@@ -1,0 +1,90 @@
+.wrapper {
+display: flex;
+align-items: center;
+gap: 6px;
+cursor: pointer;
+position: relative;
+margin-bottom: 10px;
+}
+
+.input {
+position: absolute;
+opacity: 0;
+}
+
+.box {
+width: 16px;
+height: 16px;
+border: 1px solid var(--color-gray);
+border-radius: 2px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: white;
+transition: 0.3s all;
+}
+
+.boxError {
+    border-color: var(--color-lightest-red);
+}
+
+.wrapper:hover .box {
+    border-color: var(--color-red);
+}
+
+.input:checked + .box {
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+}
+
+.input:checked + .box::after {
+    margin-top: -2px;
+    content: '';
+    display: block;
+    width: 4px;
+    height: 8px;
+    border: solid var(--color-white);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.disabled .input:checked + .box {
+    border-color: var(--color-lightest-gray);
+    background-color: var(--color-lightest-gray);
+}
+
+.label {
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+.labelDisabled {
+    color: var(--color-lightest-gray);
+}
+
+.labelError {    
+    color: var(--color-lightest-red);
+}
+
+.errorMsg {
+    width: max-content;
+    color: var(--color-lightest-red);
+    font-size: 12px;
+    position: absolute;
+    top: 100%;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: default;
+    border-color: var(--color-lightest-gray);
+}
+
+.disabled:hover .box{
+    border-color: var(--color-lightest-gray);
+}
+
+.disabled .box{
+    border-color: var(--color-lightest-gray);
+    background-color: var(--color-lightest-gray1);
+}

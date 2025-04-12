@@ -1,0 +1,12 @@
+.notification {
+    width: 470px;
+    height: 40px;
+    border-radius: 4px;
+    color: var(--color-white);
+    background-color: var(--color-light-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+}
