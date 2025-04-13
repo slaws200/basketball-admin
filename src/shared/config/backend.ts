@@ -1,0 +1,1 @@
+export const backendBaseUrl = "http://dev.trainee.dex-it.ru/api";

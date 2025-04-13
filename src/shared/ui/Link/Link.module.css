@@ -1,0 +1,12 @@
+.link {
+    color: var(--color-red);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: underline;
+}
+
+.disabled, .disabled:hover {
+    color: var(--color-lightest-gray);
+    pointer-events: none;
+}
