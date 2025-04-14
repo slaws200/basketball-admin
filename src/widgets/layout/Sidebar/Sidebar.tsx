@@ -1,24 +1,22 @@
-import {FC} from 'react'
-
-import styles from './Sidebar.module.css'
+// widgets/layout/Sidebar/Sidebar.tsx
+import { MenuItem } from '@shared/ui/MenuItem/MenuItem';
+import GroupPerson from '@assets/icons/group_person.svg?react';
+import Logout from '@assets/icons/logout.svg?react';
+import Person from '@assets/icons/person.svg?react';
+import styles from './Sidebar.module.css';
+import { FC } from 'react';
 
 export const Sidebar: FC = () => {
-    return (
-        <div className={styles.sidebar}>
-            <div className={styles.wrapper}>
-                <div className={styles.teams}>
-                    <img src="/icons/group_person.svg" alt="Teams" />
-                    <span>Teams</span>
-                </div>
-                <div className={styles.players}>
-                    <img src="/icons/person.svg" alt="Players" />
-                    <span>Players</span>
-                </div>
-                <div className={styles.signout}>
-                    <img src="/icons/input.svg" alt="sign out" />
-                    <span>Sign out</span>
-                </div>
-            </div>
-        </div>
-    )
-}
+  return (
+    <aside className={styles.sidebar}>
+      <nav className={styles.menu}>
+        <MenuItem icon={<GroupPerson />} label="Teams" active/>
+        <MenuItem icon={<Person />} label="Players" />
+      </nav>
+
+      <div className={styles.bottom}>
+        <MenuItem icon={<Logout />} label="Sign out" active/>
+      </div>
+    </aside>
+  );
+};

@@ -1,0 +1,25 @@
+.sidebar {
+    position: fixed; /* или absolute в зависимости от вашей структуры */
+    top: 80px; /* высота хедера */
+    left: 0;
+    bottom: 0;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #eee;
+    background-color: var(--color-white);
+    padding: 32px 0;
+    overflow-y: auto; /* если контент будет длиннее экрана */
+}
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .bottom {
+    margin-top: auto;
+  }
+  
