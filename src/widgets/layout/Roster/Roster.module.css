@@ -1,0 +1,18 @@
+.container {
+    margin-top: 40px;
+    /* for dev */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 1140px;
+    height: 54px;
+    border: 0.5px solid var(--color-light-gray);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-width: 0.5px;
+    color: var(--color-gray);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    padding: 0 32px;
+}
