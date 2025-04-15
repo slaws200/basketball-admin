@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-right: 1px solid #eee;
     background-color: var(--color-white);
     padding: 32px 0;
     overflow-y: auto; /* если контент будет длиннее экрана */

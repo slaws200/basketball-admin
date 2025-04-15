@@ -3,6 +3,13 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+.container > .row:last-child {    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .header {
@@ -21,7 +28,7 @@
 .row {
     display: grid;
     padding: 0 32px;
-    grid-template-columns: 10% 1fr 30%;
+    grid-template-columns: 9% 1fr 30%;
     grid-template-rows: 56px;
     justify-items: start;
     align-items: center;

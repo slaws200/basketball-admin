@@ -15,7 +15,7 @@ export const Sidebar: FC = () => {
       </nav>
 
       <div className={styles.bottom}>
-        <MenuItem icon={<Logout />} label="Sign out" active/>
+        <MenuItem icon={<Logout />} label="Sign out" staticLightestRed/>
       </div>
     </aside>
   );

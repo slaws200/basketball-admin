@@ -10,8 +10,8 @@
     cursor: pointer;
 }
 .wrapper:hover, .wrapper:hover > .icon > svg {    
-    fill: var(--color-lightest-red);
-    color: var(--color-lightest-red);
+    fill: var(--color-lightest-gray);
+    color: var(--color-lightest-gray);
 }
 
 .icon > svg {
@@ -28,4 +28,9 @@
 
 .active, .active:hover {
     color: var(--color-red);
+}
+
+.staticLightestRed, .staticLightestRed > svg,  .wrapper:hover .staticLightestRed > svg{
+    fill: var(--color-lightest-red);
+    color: var(--color-lightest-red);
 }

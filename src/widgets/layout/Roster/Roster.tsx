@@ -63,6 +63,60 @@ export const Roster: FC<RosterProps> = () => {
                     </div>
                 </div>
             </div>
+            <div className={styles.row}>
+                <div className={styles.playerNumber}>
+                    10
+                </div>
+                <div className={styles.player}>
+                    <img src="/photo.png" alt="p" className={styles.photo}/>
+                    <div className={styles.wrapper}>
+                        <div className={styles.playerName}>
+                            Tralalero Tralala Porco Dio Porco Ala
+                        </div >
+                        <div className={styles.playerPosition}>
+                            Forward
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.specs}>
+                    <div className={styles.height}>
+                        190 cm
+                    </div>
+                    <div className={styles.weight}>
+                        79 kg
+                    </div>
+                    <div className={styles.age}>
+                        21
+                    </div>
+                </div>
+            </div>
+            <div className={styles.row}>
+                <div className={styles.playerNumber}>
+                    10
+                </div>
+                <div className={styles.player}>
+                    <img src="/photo.png" alt="p" className={styles.photo}/>
+                    <div className={styles.wrapper}>
+                        <div className={styles.playerName}>
+                            Tralalero Tralala Porco Dio Porco Ala
+                        </div >
+                        <div className={styles.playerPosition}>
+                            Forward
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.specs}>
+                    <div className={styles.height}>
+                        190 cm
+                    </div>
+                    <div className={styles.weight}>
+                        79 kg
+                    </div>
+                    <div className={styles.age}>
+                        21
+                    </div>
+                </div>
+            </div>
             {/* {players.map(player => (
                 <div className={styles.row} key={player.id}>
                     <div className={styles.playerNumber}>
