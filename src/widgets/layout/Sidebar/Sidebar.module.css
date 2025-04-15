@@ -1,9 +1,5 @@
 .sidebar {
-    position: fixed; /* или absolute в зависимости от вашей структуры */
-    top: 80px; /* высота хедера */
-    left: 0;
-    bottom: 0;
-    width: 140px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

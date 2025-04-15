@@ -1,18 +1,63 @@
-.container {
-    margin-top: 40px;
-    /* for dev */
+.container {    
+    color: var(--color-gray);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.header {
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 1140px;
     height: 54px;
     border: 0.5px solid var(--color-light-gray);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-width: 0.5px;
-    color: var(--color-gray);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 100%;
     padding: 0 32px;
+    font-size: 18px;
+}
+
+.row {
+    display: grid;
+    padding: 0 32px;
+    grid-template-columns: 10% 1fr 30%;
+    grid-template-rows: 56px;
+    justify-items: start;
+    align-items: center;
+    border: 0.5px solid var(--color-light-gray);
+    border-top: 0px;
+}
+
+.firstRow {
+    grid-template-rows: 40px;
+}
+
+.player {
+    display: flex;
+    gap: 10px;
+}
+
+.playerPosition {
+    font-size: 12px;
+    line-height: 21px;
+    color: var(--color-light-gray);
+}
+
+.specs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo  {
+    height: 52px;
+    height: 38px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }

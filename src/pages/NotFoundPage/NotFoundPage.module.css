@@ -1,0 +1,29 @@
+.notFoundPage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFoundImg {
+    max-width: 380px;
+    margin-bottom: 48px;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 100%;
+    color: var(--color-lightest-red);
+    margin-bottom: 24px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--color-gray);
+
+}
