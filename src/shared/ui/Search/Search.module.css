@@ -20,8 +20,12 @@
 }
 
 .searchIcon {
-    cursor: pointer;
+    cursor: pointer;  
+}
+
+.searchIcon > svg {    
+    fill: var(--color-lightest-gray);
     width: 12px;
-    height: 12px;        
-    margin-right: 10px;
+    height: 12px;      
+    margin-right: 12px;
 }
