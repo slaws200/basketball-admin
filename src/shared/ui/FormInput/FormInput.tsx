@@ -23,7 +23,6 @@ export const FormInput: FC<FormInputProps> = ({ name, label, needEye, type = 'te
           type={type}
           needEye={needEye}
           error={fieldState?.error?.message}
-          passwordVisible={false}
         />
       )}
     />

@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 33% 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #F5FBFF;
+}
+
+.img {
+    width: 612px;
+}
+
+.title {
+    color: #344472;
+    font-size: 36px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    color: var(--color-gray);
+    gap: 4px;
+    font-size: 14px;
+}

@@ -1,4 +1,4 @@
-import { FC, InputHTMLAttributes } from 'react';
+import { FC, InputHTMLAttributes, useState } from 'react';
 import clsx from 'classnames';
 import CloseEye from '@assets/icons/close_eye.svg?react'
 import Eye from '@assets/icons/eye.svg?react'
@@ -8,10 +8,12 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     needEye?: boolean;
     label?: string;
     error?: string;
-    passwordVisible?: boolean;
 }
 
-export const Input: FC<InputProps> = ({label, error, disabled, needEye,passwordVisible, ...rest}) => {
+export const Input: FC<InputProps> = ({label, error, disabled, needEye, ...rest}) => {
+
+    const [passVisibility, setPassVisibility] = useState<boolean>(false)
+
     return (
         <div className={styles.wrapper}>
             {label && <label className={styles.label}>{label}</label>}
@@ -25,7 +27,7 @@ export const Input: FC<InputProps> = ({label, error, disabled, needEye,passwordV
                     {...rest}
                 />
                 {needEye ? 
-                    <div className={styles.eye}>{passwordVisible ? <Eye/> : <CloseEye/>}</div>
+                    <div className={styles.eye} onClick={() => setPassVisibility(!passVisibility)}>{passVisibility ? <Eye/> : <CloseEye/>}</div>
                  :
                     null
                 }            

@@ -6,14 +6,14 @@ import { Button } from '@shared/ui/Button/Button';
 import { Checkbox } from '@shared/ui/Checkbox/Checkbox';
 
 interface LoginFormInputs {
-  email: string;
+  login: string;
   password: string;
 }
 
 export const LoginForm: FC = () => {
   const methods = useForm<LoginFormInputs>({
     defaultValues: {
-      email: '',
+      login: '',
       password: '',
     },
   });
@@ -26,10 +26,9 @@ export const LoginForm: FC = () => {
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
-        <FormInput name="email" label="Email" required />
-        <FormInput name="password" label="Пароль" type="password" needEye required />        
-        <Checkbox required label='I Agree' type='checkbox'/>
-        <Button text={'Войти'} variant='primary' type='submit'/>
+        <FormInput name="login" label="Login" required />
+        <FormInput name="password" label="Password" type="password" needEye required />     
+        <Button text={'Sign In'} variant='primary' type='submit'/>
       </form>
     </FormProvider>
   );
